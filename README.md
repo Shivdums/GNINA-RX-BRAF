@@ -4,7 +4,7 @@
 
 ---
 
-# 🧬 BRAF-CXR: Redocking and Cross-Docking of BRAF Inhibitors Using GNINA for Thyroid Cancer
+# 🧬 BRAF-CXR: Redocking and Cross-Docking and Whole docking of BRAF Inhibitors Using GNINA for Thyroid Cancer
 
 This project investigates the binding interactions of small-molecule inhibitors with the **BRAF V600E kinase** using **GNINA**, a deep learning-enhanced molecular docking framework. The primary goal was to compare the binding affinities and pose quality of three clinically relevant inhibitors—**Vemurafenib**, **Dabrafenib**, and **Sorafenib**—through a combination of **redocking** and **cross-docking** experiments. Emphasis was placed on evaluating how GNINA’s CNN-based scoring function handles native versus non-native ligands when docked into the same protein structure (PDB ID: 3OG7).
 
@@ -67,6 +67,8 @@ Top-ranked poses for each ligand were selected and analyzed based on:
 * **Dabrafenib**, despite being chemically related, scored lower. The top pose deviated from expected orientation, suggesting steric hindrance or lack of optimal hydrogen bonding in the rigid conformation of the 3OG7 receptor.
 
 * **Sorafenib** showed intermediate performance—its CNNscore and affinity were better than Dabrafenib but not as strong as Vemurafenib. Sorafenib’s broader kinase activity and structural flexibility may have contributed to moderate binding quality within this specific BRAF conformation.
+
+**🧭 Whole-protein docking of Vemurafenib** was also conducted to explore potential alternate binding pockets outside the known active site. Interestingly, the ligand did find other surface-level and shallow internal pockets — but all exhibited lower binding scores and CNNscores, reaffirming that the crystallized ATP-binding pocket remains the most energetically and structurally favorable site for Vemurafenib binding.
 
 ---
 
